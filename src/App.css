@@ -1,0 +1,383 @@
+/* App-specific styles are in index.css */
+
+/* Robot Animation Component */
+.robot-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Adjusted to exactly match the banner height requested */
+    width: 100%;
+    background: transparent; /* Remove blue gradient so it blends into the rest of the dark site */
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.robot-container {
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+    transform: scale(0.33); /* Scaled down perfectly to fit the banner comfortably */
+    transform-origin: center center;
+}
+
+/* Sombra */
+.robot-shadow {
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 30px;
+    background: rgba(0, 40, 100, 0.2);
+    border-radius: 50%;
+    filter: blur(8px);
+    animation: shadowPulse 3s ease-in-out infinite;
+}
+
+/* Antena */
+.robot-antenna {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 30px;
+    background: #003D7A;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.robot-antenna-top {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(135deg, #4DD9FF 0%, #00C2FF 100%);
+    border: 5px solid #003D7A;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(77, 217, 255, 0.5);
+}
+
+/* Cabeça */
+.robot-head {
+    position: relative;
+    width: 200px;
+    height: 160px;
+    background: linear-gradient(180deg, #F5E6D3 0%, #E8D4BB 100%);
+    border: 6px solid #003D7A;
+    border-radius: 50% 50% 45% 45%;
+    z-index: 2;
+}
+
+.robot-head-inner {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 130px;
+    background: linear-gradient(180deg, #7B84FF 0%, #5B6AE8 100%);
+    border: 5px solid #003D7A;
+    border-radius: 45% 45% 40% 40%;
+}
+
+/* Orelhas/Sensores */
+.robot-ear {
+    position: absolute;
+    top: 70px;
+    width: 45px;
+    height: 60px;
+    background: linear-gradient(135deg, #4DD9FF 0%, #00C2FF 100%);
+    border: 5px solid #003D7A;
+    border-radius: 50%;
+}
+
+.robot-ear.left {
+    left: -35px;
+    animation: earWiggle 2s ease-in-out infinite;
+}
+
+.robot-ear.right {
+    right: -35px;
+    animation: earWiggle 2s ease-in-out infinite 0.5s;
+}
+
+.robot-ear-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 30px;
+    background: #003D7A;
+    border-radius: 50%;
+}
+
+/* Olhos */
+.robot-eyes {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.robot-eye {
+    width: 45px;
+    height: 55px;
+    background: #003D7A;
+    border-radius: 50%;
+    position: relative;
+    animation: blink 4s ease-in-out infinite;
+}
+
+.robot-eye-white {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    animation: eyeMove 3s ease-in-out infinite;
+}
+
+/* Boca */
+.robot-mouth {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 20px;
+    background: #FF6B9D;
+    border: 4px solid #003D7A;
+    border-radius: 0 0 35px 35px;
+    border-top: none;
+    z-index: 3;
+}
+
+/* Corpo */
+.robot-body {
+    position: relative;
+    margin-top: -10px;
+    width: 180px;
+    height: 160px;
+    background: linear-gradient(180deg, #F5E6D3 0%, #E8D4BB 100%);
+    border: 6px solid #003D7A;
+    border-radius: 45% 45% 30% 30%;
+    z-index: 1;
+}
+
+/* Tela do peito */
+.robot-chest-screen {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 75px;
+    background: linear-gradient(180deg, #4DD9FF 0%, #00A8D6 100%);
+    border: 5px solid #003D7A;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.robot-screen-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Botões */
+.robot-buttons {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.robot-button {
+    width: 12px;
+    height: 12px;
+    background: #003D7A;
+    border-radius: 50%;
+}
+
+/* Braços */
+.robot-arm {
+    position: absolute;
+    top: 170px;
+    width: 35px;
+    height: 120px;
+}
+
+.robot-arm.left {
+    left: -25px;
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+.robot-arm.right {
+    right: -25px;
+}
+
+.robot-arm-upper {
+    width: 35px;
+    height: 65px;
+    background: linear-gradient(135deg, #4DD9FF 0%, #00C2FF 100%);
+    border: 5px solid #003D7A;
+    border-radius: 20px;
+}
+
+.robot-arm-lower {
+    margin-top: 5px;
+    width: 35px;
+    height: 50px;
+    background: linear-gradient(135deg, #4DD9FF 0%, #00C2FF 100%);
+    border: 5px solid #003D7A;
+    border-radius: 15px;
+}
+
+.robot-hand {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: #003D7A;
+    border-radius: 50%;
+}
+
+/* Pernas */
+.robot-legs {
+    position: relative;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.robot-leg {
+    width: 45px;
+    height: 70px;
+    background: linear-gradient(180deg, #4DD9FF 0%, #00C2FF 100%);
+    border: 5px solid #003D7A;
+    border-radius: 25px 25px 30px 30px;
+}
+
+.robot-foot {
+    margin-top: -5px;
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(135deg, #4DD9FF 0%, #00C2FF 100%);
+    border: 5px solid #003D7A;
+    border-radius: 40% 40% 45% 45%;
+}
+
+/* Animações */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) scale(0.33);
+    }
+    50% {
+        transform: translateY(-20px) scale(0.33);
+    }
+}
+
+@keyframes shadowPulse {
+    0%, 100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateX(-50%) scale(0.8);
+        opacity: 0.3;
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes blink {
+    0%, 90%, 100% {
+        transform: scaleY(1);
+    }
+    95% {
+        transform: scaleY(0.1);
+    }
+}
+
+@keyframes eyeMove {
+    0%, 100% {
+        transform: translateX(-50%);
+    }
+    25% {
+        transform: translateX(-70%);
+    }
+    75% {
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+        opacity: 0.7;
+    }
+}
+
+@keyframes earWiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Terminal Custom Cursor */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.terminal-cursor {
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+  animation: cursorBlink 1s step-end infinite;
+  pointer-events: none;
+}
+.terminal-input:focus ~ .terminal-cursor {
+  display: none;
+}
