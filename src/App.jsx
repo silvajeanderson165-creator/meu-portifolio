@@ -134,7 +134,7 @@ const PROJECTS = [
 const EXPERIENCE = [
   {
     role: 'Desenvolvedor Web Full Stack',
-    company: 'Freelancer & Projetos Autorais',
+    company: 'Projetos Autorais',
     desc: 'Desenvolvedor Full Stack de produtos digitais imersivos e escaláveis. Projetos autorais: Miniatura Forja AI (integração IA + Node/Express), Tradutor Online (arquitetura avançada de APIs) e Portfólio cinematográfico (terminal interativo + GSAP). Do backend robusto às interfaces marcantes - domínio completo do ciclo de desenvolvimento. Stack: React v19, Node.js, Express, REST APIs, IA, GSAP, Tailwind CSS, JavaScript ES6+, Git.',
     active: true,
   },
