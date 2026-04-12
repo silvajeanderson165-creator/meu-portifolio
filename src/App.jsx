@@ -61,7 +61,7 @@ const PROJECTS = [
       'Node.js', 'Express v5', 'Cors', '@fal-ai/client', 
       'Lucide-React', 'ESLint', 'Git/GitHub', 'Vercel'
     ],
-    image: '/gerador_miniaturas_cover.png',
+    image: '/esaa_cover.jpg',
     live: 'https://thumbnail-forge-one.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/thumbnail-forge',
   },
