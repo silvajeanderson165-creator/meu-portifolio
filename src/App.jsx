@@ -135,7 +135,7 @@ const EXPERIENCE = [
   {
     role: 'Desenvolvedor Web Full Stack',
     company: 'Freelancer & Projetos Autorais',
-    desc: 'Desenvolvimento Full Stack end-to-end focado em criar produtos digitais imersivos e escaláveis. Construção de aplicações modernas com integrações de IA (Miniatura Forja AI utilizando Node/Express), utilitários complexos (Tradutor Online com consumo avançado de APIs), e interfaces cinematográficas (este próprio Portfólio com terminal interativo e animações GSAP). Domínio completo do ciclo de desenvolvimento, orquestrando um backend eficiente com experiências web marcantes. Stack: React v19, Node.js, Express, Integrações com IA REST, GSAP, Tailwind CSS, JavaScript ES6+ e Git.',
+    desc: 'Desenvolvedor Full Stack de produtos digitais imersivos e escaláveis. Projetos autorais: Miniatura Forja AI (integração IA + Node/Express), Tradutor Online (arquitetura avançada de APIs) e Portfólio cinematográfico (terminal interativo + GSAP). Do backend robusto às interfaces marcantes - domínio completo do ciclo de desenvolvimento. Stack: React v19, Node.js, Express, REST APIs, IA, GSAP, Tailwind CSS, JavaScript ES6+, Git.',
     active: true,
   },
   {
