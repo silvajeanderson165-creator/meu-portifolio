@@ -53,6 +53,16 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    id: 11,
+    name: 'Restaurante La Maison',
+    desc: 'Site de restaurante de alta gastronomia com design cinematográfico e premium. Experiência de usuário fluida e interativa com animações avançadas.',
+    tags: ['React', 'TypeScript', 'Vite', 'GSAP', 'Framer Motion', 'Zustand', 'Tailwind CSS'],
+    image: '/la_maison_cover.png',
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    live: 'https://sitemd-sooty.vercel.app',
+    github: 'https://github.com/silvajeanderson165-creator/la-maison-restaurant-site',
+  },
+  {
     id: 10,
     name: 'Dasheborde para Você se Organizar',
     desc: 'Dashboard completo e profissional de gerenciamento de tarefas, com autenticação JWT, banco de dados em tempo real e design premium em Dark Mode.',
