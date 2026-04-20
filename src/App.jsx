@@ -74,7 +74,7 @@ const PROJECTS = [
     ],
     image: '/nexus_portal_cover.png',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
-    live: 'https://nexus-portal-xxx.vercel.app',
+    live: 'https://nexus-portal-one.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/nexus-portal',
     featured: true
   },
