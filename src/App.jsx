@@ -1008,7 +1008,7 @@ function App() {
   return (
     <>
       {loading && <Preloader onComplete={handlePreloaderComplete} />}
-      <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.6s ease' }}>
+      <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.6s ease', overflowX: 'hidden', width: '100vw', maxWidth: '100%' }}>
         <GlobalBackground />
         <Navbar />
         <Hero />

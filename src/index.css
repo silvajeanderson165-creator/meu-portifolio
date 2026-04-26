@@ -1504,6 +1504,30 @@ section {
 
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.45rem;
+    width: 10px;
+    height: 10px;
+    top: 0.4rem;
+  }
+
+  .timeline-card {
+    padding: 1.25rem;
+  }
+
+  .timeline-role {
+    font-size: 1rem;
   }
 
   .stats-grid {
